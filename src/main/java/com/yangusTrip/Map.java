@@ -53,6 +53,7 @@ public class Map {
     }
 
     public Hotel findTheBestHotel(List<Hotel> availableHotels){
-        return this.availableHotels.stream().
+        Hotel bestHotel = availableHotels.stream()
+                .collect()
     }
 }
