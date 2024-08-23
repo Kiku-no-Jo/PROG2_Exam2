@@ -28,4 +28,11 @@ public class Parc extends Place{
     public void addReview(Review newReview) {
         getReviews().add(newReview);
     }
+
+    @Override
+    public String toString() {
+        return "Parc{" +
+                "nearbyHotels=" + nearbyHotels +
+                '}';
+    }
 }

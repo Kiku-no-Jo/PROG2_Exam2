@@ -40,4 +40,12 @@ public class Hotel extends Place {
     public void addReview(Review review) {
         getReviews().add(review);
     };
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "hotelRooms=" + hotelRooms +
+                ", nearbyParcs=" + nearbyParcs +
+                '}';
+    }
 }

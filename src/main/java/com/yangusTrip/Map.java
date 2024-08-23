@@ -54,6 +54,16 @@ public class Map {
 
     public Hotel findTheBestHotel(List<Hotel> availableHotels){
         Hotel bestHotel = availableHotels.stream()
-                .collect()
+                .filter(hotel -> hotel.getNearbyParcs().size())
+    }
+
+    @Override
+    public String toString() {
+        return "Map{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", availableParcs=" + availableParcs +
+                ", availableHotels=" + availableHotels +
+                '}';
     }
 }
